@@ -3,7 +3,7 @@ import { OtherComponent } from './components/other/other.component'
  
 export const otherRoutes: Route[] = [
   {
-    path: '',
+    path: ':id',
     component: OtherComponent
   }
 ]

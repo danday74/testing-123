@@ -1,3 +1,3 @@
-<div class="basicPod" [style.top.px]="50050-100+pod().top" [style.left.px]="50050-150+pod().left" cdkDrag>
+<div class="basicPod" [style.top.px]="50050-100+pod().top" [style.left.px]="50050-150+pod().left" cdkDrag routerLink="/other/{{pod().id}}">
     {{pod().label}}
 </div>

@@ -3,6 +3,12 @@
     width: 300px;
     background-color: red;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        background-color: aqua;
+    }
     // top: 50000px;
     // left: 50000px;
 }

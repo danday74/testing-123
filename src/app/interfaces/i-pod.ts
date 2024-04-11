@@ -8,12 +8,15 @@ export interface IPod {
   active: boolean
   type: TPodType
   label: string
+  stat1?: number
+  stat2?: number
+  text?: string
 }
 
 export interface IBasicPod extends IPod {
-  stat1: number
-  stat2: number
-  text: string
+  // stat1: number
+  // stat2: number
+  // text: string
 }
 
 export interface IGraphPod extends IPod {}
