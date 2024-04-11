@@ -4,6 +4,7 @@
     @for (pod of pods; track pod.id) {
         @if (pod.active) {
             @if (pod.type === 'basic-pod') {
+                <app-basic-pod [pod]="pod"></app-basic-pod>
             }
             @if (pod.type === 'graph-pod') {
               <app-graph-pod [pod]="pod"></app-graph-pod>
