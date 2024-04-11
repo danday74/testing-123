@@ -5,4 +5,16 @@
   position: absolute;
 //  top: 50000px;
 //  left: 50000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 150px;
+}
+
+.wrapper-div {
+  text-align: center;
+  font-weight: bold;
 }
