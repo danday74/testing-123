@@ -1,0 +1,18 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #081351;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    // opacity: 0.5;
+}
+
+.navtext {
+    font-size: 20px;
+    font-family: sans-serif;
+}
