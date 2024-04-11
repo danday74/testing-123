@@ -3,6 +3,7 @@ import { MatFormField, MatLabel } from '@angular/material/form-field'
 import { MatOption, MatSelect } from '@angular/material/select'
 import { IBasicPod, IGraphPod, IPod } from '../../../../interfaces/i-pod';
 import { podsData } from '../../../../data/pods-data';
+import { PodService } from '../../../../services/pod.service';
 
 @Component({
   selector: 'app-navbar',
@@ -18,6 +19,10 @@ import { podsData } from '../../../../data/pods-data';
 })
 export class NavbarComponent {
 
-  pods: (IBasicPod | IGraphPod | IPod)[] = podsData
+  constructor(private podService:PodService) {
+
+  }
+
+  pods: (IBasicPod | IGraphPod | IPod)[] = this.podService.getPods()
 
 }

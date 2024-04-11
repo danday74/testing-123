@@ -1,2 +1,13 @@
 <app-navbar></app-navbar>
-<div class="dashboard" cdkDrag></div>
+<div class="dashboard" cdkDrag>
+ <div class="innerDashboard">
+    @for (pod of pods; track pod.id) {
+        @if (pod.active) {
+            @if (pod.type === 'basic-pod') {
+            }
+            @if (pod.type === 'graph-pod') {
+            }
+        }
+      }
+ </div>
+</div>

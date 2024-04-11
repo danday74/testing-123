@@ -7,3 +7,9 @@ $size: 100100;
   left: calc(50vw - $size / 2 * 1px);
   background: url(/assets/images/grid-center.png) center no-repeat, url(/assets/images/grid.png);
 }
+
+.innerDashboard {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
