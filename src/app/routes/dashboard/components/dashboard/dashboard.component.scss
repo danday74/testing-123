@@ -1,0 +1,9 @@
+$size: 100100;
+.dashboard {
+  width: $size*1px;
+  height: $size*1px;
+  position: absolute;
+  top: calc(50vh - $size / 2 * 1px);
+  left: calc(50vw - $size / 2 * 1px);
+  background: url(/assets/images/grid-center.png) center no-repeat, url(/assets/images/grid.png);
+}
