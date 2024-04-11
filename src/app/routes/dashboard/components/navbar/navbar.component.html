@@ -1,10 +1,12 @@
 <div class="navbar">
     <span class="navtext">X3.5</span>
     <mat-form-field>
-        <mat-label>Favorite food</mat-label>
+        <mat-label>Add Pod</mat-label>
         <mat-select>
-          @for (food of foods; track food) {
-            <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+          @for (pod of pods; track pod.id) {
+            @if (!pod.active) {
+                <mat-option [value]="pod.id">{{pod.label}}</mat-option>
+            }
           }
         </mat-select>
       </mat-form-field>

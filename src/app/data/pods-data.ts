@@ -1,6 +1,6 @@
-import { IBasicPod, IGraphPod } from '../interfaces/i-pod'
+import { IBasicPod, IGraphPod, IPod } from '../interfaces/i-pod'
 
-export const podsData: (IBasicPod | IGraphPod)[] = [
+export const podsData: (IBasicPod | IGraphPod | IPod)[] = [
   {
     id: 'pod-1',
     top: -300,
@@ -51,6 +51,7 @@ export const podsData: (IBasicPod | IGraphPod)[] = [
     left: 300,
     zIndex: 103,
     active: true,
-    type: 'graph-pod'
+    type: 'graph-pod',
+    label: 'A graph'
   }
 ]

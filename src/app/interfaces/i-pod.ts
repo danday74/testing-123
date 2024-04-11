@@ -7,10 +7,10 @@ export interface IPod {
   zIndex: number
   active: boolean
   type: TPodType
+  label: string
 }
 
 export interface IBasicPod extends IPod {
-  label: string
   stat1: number
   stat2: number
   text: string
