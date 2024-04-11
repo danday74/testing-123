@@ -3,11 +3,12 @@ import { NavbarComponent } from '../navbar/navbar.component';
 import { CdkDrag } from '@angular/cdk/drag-drop'
 import { IBasicPod, IGraphPod, IPod } from '../../../../interfaces/i-pod';
 import { PodService } from '../../../../services/pod.service';
+import { GraphPodComponent } from '../graph-pod/graph-pod.component'
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [NavbarComponent, CdkDrag],
+  imports: [NavbarComponent, CdkDrag, GraphPodComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })

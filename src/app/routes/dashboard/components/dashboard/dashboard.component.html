@@ -6,6 +6,7 @@
             @if (pod.type === 'basic-pod') {
             }
             @if (pod.type === 'graph-pod') {
+              <app-graph-pod [pod]="pod"></app-graph-pod>
             }
         }
       }
