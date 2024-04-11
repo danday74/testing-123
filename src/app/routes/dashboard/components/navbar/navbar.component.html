@@ -1,14 +1,15 @@
 <div class="navbar">
-    <span class="navtext">X3.5</span>
+  <span class="navtext">X3.5</span>
+  <div class="dropper">
     <mat-form-field>
-        <mat-label>Add Pod</mat-label>
-        <mat-select>
-          @for (pod of pods; track pod.id) {
-            @if (!pod.active) {
-                <mat-option [value]="pod.id">{{pod.label}}</mat-option>
-            }
+      <mat-label>Add Pod</mat-label>
+      <mat-select>
+        @for (pod of pods; track pod.id) {
+          @if (!pod.active) {
+            <mat-option [value]="pod.id">{{ pod.label }}</mat-option>
           }
-        </mat-select>
-      </mat-form-field>
+        }
+      </mat-select>
+    </mat-form-field>
+  </div>
 </div>
-
