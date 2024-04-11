@@ -1,3 +1,11 @@
 <div class="navbar">
     <span class="navtext">X3.5</span>
+    <mat-form-field>
+        <mat-label>Favorite food</mat-label>
+        <mat-select>
+          @for (food of foods; track food) {
+            <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
 </div>
