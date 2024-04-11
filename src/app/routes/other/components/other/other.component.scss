@@ -1,0 +1,27 @@
+.my-pod {
+  padding: 20px 30px;
+
+  .my-label {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .my-stat1 {
+    color: green;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .my-stat2 {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .my-text {
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 20px;
+    color: #777;
+  }
+}

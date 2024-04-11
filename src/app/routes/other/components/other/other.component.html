@@ -1,17 +1,9 @@
-{{id()}}
-<div>
-@if(pod) {
-    <div>
-    {{pod.label}}
-</div>
-<div>
-    {{pod.stat1}}
-</div>
-<div>
-    {{pod.stat2}}
-</div>
-<div>
-    {{pod.text}}
-</div>
-}
+<!--{{ id() }}-->
+<div class="my-pod">
+  @if (pod) {
+    <div class="my-label">{{ pod.label }}</div>
+    <div class="my-stat1">Your pod scored {{ pod.stat1 }} / 100</div>
+    <div class="my-stat2">Your pod is {{ pod.stat2 }}% awesome</div>
+    <div class="my-text">{{ pod.text }}</div>
+  }
 </div>
